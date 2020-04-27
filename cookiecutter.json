@@ -1,0 +1,39 @@
+{
+    "project_name": "Cookiecutter Python Package",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_version": "0.1.0",
+    "project_short_description": "This is my description package.",
+    "project_homepage": "http://example.com",
+    "project_repository": "http://example.com/project",
+    "keywords": "{{ cookiecutter.project_slug }}",
+    "black_line_length": "88",
+    "flake8_line_length": "88",
+    "use_travis": "y/N",
+    "use_docker": "y/N",
+    "use_poetry": "Y/n",
+    "use_pytest": "y/N",
+    "use_cli": "y/N",
+    "add_badges": "y/N",
+    "add_pyup_badge": "y/N",
+    "use_sponsor": "y/N",
+    "python_requires": "3.8",
+    "system": [
+      "Posix (Linux | Mac OS X | BSD | Solaris)",
+      "DOS (Windows)",
+      "Both"
+    ],    
+    "open_source_license": [
+        "MIT license",
+        "BSD license",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "Not open source"
+      ],
+    "your_full_name": "Your full name",
+    "email": "example@domain.com",
+    "github_profile": "Github Profile",
+    "pypi_username": "Username Pypi",
+    "test_pypi_username": "{{ cookiecutter.pypi_username }}",
+    "author_website": "https://domain.com"
+}

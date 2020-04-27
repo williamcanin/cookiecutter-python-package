@@ -1,0 +1,6 @@
+[flake8]
+exclude = .git,*migrations*
+max-line-length = 120
+; F401: imported but unused
+; W503: line break before binary operator
+ignore = F401, W503

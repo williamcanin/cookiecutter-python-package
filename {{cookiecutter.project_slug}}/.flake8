@@ -1,0 +1,6 @@
+[flake8]
+exclude = .git,*migrations*
+max-line-length = {{ cookiecutter.flake8_line_length }}
+; F401: imported but unused
+; W503: line break before binary operator
+; ignore = F401, W503
