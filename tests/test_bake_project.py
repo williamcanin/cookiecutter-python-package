@@ -40,8 +40,17 @@ def test_not_using_pytest(cookies):
         lines = test_file_path.readlines()
         assert "import unittest" in ''.join(lines)
         assert "import pytest" not in ''.join(lines)
-        assert run_inside_dir('python setup.py test', str(result.project)) == 0
         assert run_inside_dir('python -m unittest tests/test_cookiecutter_python_package.py', str(result.project)) == 0
+
+
+def test_not_using_poetry(cookies):
+    with bake_in_temp_dir(cookies, extra_context={'use_poetry': 'n'}) as result:
+        test_file_path = result.project.join(
+            'setup.py'
+        )
+        lines = test_file_path.readlines()
+        assert "from setuptools import setup, find_packages" in ''.join(lines)
+        assert run_inside_dir('python setup.py test', str(result.project)) == 0
 
 
 def test_bake_and_run_tests(cookies):

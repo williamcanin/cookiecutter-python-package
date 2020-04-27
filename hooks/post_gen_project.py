@@ -119,7 +119,7 @@ setup(
         'install': PostInstallCommand
     },
     package_data={
-        '': ['LICENSE', 'requirements_dev.txt']}
+        '': ['LICENSE', 'requirements.txt']}
 )"""}
 
 
