@@ -58,7 +58,7 @@ If you want to build something more in this project, prepare the environment lik
 
 ```
 $ git clone https://github.com/williamcanin/cookiecutter-python-package.git
-$ cd pypkg-cookiecutter
+$ cd cookiecutter-python-package
 $ python -m venv venv
 $ . venv/bin/activate
 $ pip install --upgrade pip
